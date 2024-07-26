@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VisualRec Master | Screen Recorder Tool</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <i class="bi bi-camera-video-fill"></i>
+          <span class="ms-2">VisualRec Master</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#faqs">FAQs</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      id="hero"
+      class="min-vh-100 d-flex align-items-center position-relative"
+    >
+      <div
+        class="position-absolute top-0 start-0 w-100 h-100"
+        style="
+          background: url('https://images.pexels.com/photos/4062559/pexels-photo-4062559.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')
+            no-repeat center center;
+          background-size: cover;
+          filter: brightness(50%);
+        "
+      ></div>
+      <div class="container text-center position-relative">
+        <h1 class="display-4 text-white text-shadow">
+          Capture Your Screen Effortlessly
+        </h1>
+        <p class="lead text-white text-shadow">
+          The best screen recording tool for professionals and enthusiasts
+          alike.
+        </p>
+        <a href="#features" class="btn btn-primary btn-lg">Learn More</a>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="min-vh-100 d-flex align-items-center">
+      <div class="container">
+        <h2 class="text-center my-4">Features</h2>
+        <div class="row align-items-stretch">
+          <div class="col-lg-4">
+            <div class="card mb-4 h-100">
+              <div class="card-body">
+                <div class="d-flex flex-column gap-3">
+                  <i class="bi bi-camera-reels display-1 text-primary"></i>
+                  <div>
+                    <h5 class="card-title">High Quality Recording</h5>
+                    <p class="card-text">
+                      Capture your screen in full HD with no lag.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card mb-4 h-100">
+              <div class="card-body">
+                <div class="d-flex flex-column gap-3">
+                  <i class="bi bi-scissors display-1 text-warning"></i>
+                  <div>
+                    <h5 class="card-title">Easy Editing Tools</h5>
+                    <p class="card-text">
+                      Edit your recordings with built-in tools quickly and
+                      easily.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card mb-4 h-100">
+              <div class="card-body">
+                <div class="d-flex flex-column gap-3">
+                  <i class="bi bi-box-arrow-down display-1 text-success"></i>
+                  <div>
+                    <h5 class="card-title">Multiple Export Options</h5>
+                    <p class="card-text">
+                      Export your recordings in various formats for different
+                      platforms.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="min-vh-100 d-flex align-items-center">
+      <div class="container">
+        <h2 class="text-center my-4">Contact Us</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-outline-light w-100">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <section id="faqs" class="min-vh-100 d-flex align-items-center">
+      <div class="container">
+        <h2 class="text-center my-4">Frequently Asked Questions</h2>
+        <div class="accordion" id="faqsAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+              >
+                How do I install the screen recorder tool?
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#faqsAccordion"
+            >
+              <div class="accordion-body">
+                You can install the screen recorder tool by downloading it from
+                our website and following the installation instructions
+                provided.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+              >
+                Can I edit my recordings within the tool?
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqsAccordion"
+            >
+              <div class="accordion-body">
+                Yes, the tool comes with built-in editing features that allow
+                you to trim, cut, and add annotations to your recordings.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+              >
+                What export formats are supported?
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqsAccordion"
+            >
+              <div class="accordion-body">
+                The tool supports multiple export formats including MP4, AVI,
+                and GIF.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4">
+      <div class="container text-center">
+        <p>&copy; 2024 Screen Recorder. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
